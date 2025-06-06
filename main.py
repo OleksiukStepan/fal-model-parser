@@ -7,7 +7,7 @@ from utils.download_models import download_models
 
 def main():
     if not os.path.exists(RAW_MODELS_PATH):
-        print("📥 Файл моделей не знайдено. Завантажую з API...")
+        print("Model file not found. Download from API...")
         download_models()
 
     filtered = load_and_filter_models()
